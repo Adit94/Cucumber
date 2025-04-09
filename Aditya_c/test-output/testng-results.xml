@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-09T17:25:41 IST" name="Default suite" finished-at="2025-04-09T17:26:12 IST" duration-ms="30981">
+  <suite started-at="2025-04-09T17:37:31 IST" name="Cucumber Suite" finished-at="2025-04-09T17:37:47 IST" duration-ms="16178">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerClass@359df09a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-09T17:25:41 IST" name="Default test" finished-at="2025-04-09T17:26:12 IST" duration-ms="30981">
+    <test started-at="2025-04-09T17:37:31 IST" name="Cucumber Test" finished-at="2025-04-09T17:37:47 IST" duration-ms="16178">
       <class name="runner.RunnerClass">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunnerClass@359df09a]" started-at="2025-04-09T17:25:41 IST" name="setUpClass" finished-at="2025-04-09T17:25:42 IST" duration-ms="726" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunnerClass@359df09a]" started-at="2025-04-09T17:37:31 IST" name="setUpClass" finished-at="2025-04-09T17:37:32 IST" duration-ms="740" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5d2828c9]]>
+                <![CDATA[org.testng.TestRunner@1bc776b7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerClass@359df09a]" started-at="2025-04-09T17:25:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-09T17:26:12 IST" duration-ms="30134" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerClass@359df09a]" started-at="2025-04-09T17:37:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-09T17:37:47 IST" duration-ms="15316" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,35 +34,54 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[The following asserts failed:
-Expected Revenue mismatch expected [90980] but found [$90,980.00],
-Budgeted Cost mismatch expected [30000] but found [$30,000.00],
-Actual Cost mismatch expected [85990] but found [$85,990.00],
-Expected Response mismatch expected [0] but found []]]>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: MicrosoftEdge=135.0.3179.66)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d5543760b5a2b89c49baaa61804cf277, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.66, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51813}, msedge: {msedgedriverVersion: 135.0.3179.54 (c435295f8c13..., userDataDir: C:\Users\admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51813/devtoo..., se:cdpVersion: 135.0.3179.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5543760b5a2b89c49baaa61804cf277]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Expected Revenue mismatch expected [90980] but found [$90,980.00],
-Budgeted Cost mismatch expected [30000] but found [$30,000.00],
-Actual Cost mismatch expected [85990] but found [$85,990.00],
-Expected Response mismatch expected [0] but found []
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at stepdefinitions.CampaignsModule.campaign_details_page_with_title_should_be_displayed_with_the_following_data(CampaignsModule.java:183)
-at ✽.Campaign details page with title "Zoho CRM - Campaign Details" should be displayed with the following data:"LG Dual Invertor AC""Conference""Complete""03/29/2025""04/29/2025""90980""30000""85990""0""2"(file:///C:/Users/admin/git/Cucumber/Aditya_c/FeatureFiles/CampaignsModule.feature:24)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: MicrosoftEdge=135.0.3179.66)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d5543760b5a2b89c49baaa61804cf277, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.66, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51813}, msedge: {msedgedriverVersion: 135.0.3179.54 (c435295f8c13..., userDataDir: C:\Users\admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51813/devtoo..., se:cdpVersion: 135.0.3179.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5543760b5a2b89c49baaa61804cf277
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:318)
+at stepdefinitions.CampaignsModule.home_page_with_title_should_be_displayed(CampaignsModule.java:63)
+at ✽.Home page with title "Zoho CRM - Home Page" should be displayed(file:///C:/Users/admin/git/Cucumber/Aditya_c/FeatureFiles/CampaignsModule.feature:8)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunnerClass@359df09a]" started-at="2025-04-09T17:26:12 IST" name="tearDownClass" finished-at="2025-04-09T17:26:12 IST" duration-ms="65" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunnerClass@359df09a]" started-at="2025-04-09T17:37:47 IST" name="tearDownClass" finished-at="2025-04-09T17:37:47 IST" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.RunnerClass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Cucumber Test -->
+  </suite> <!-- Cucumber Suite -->
 </testng-results>
