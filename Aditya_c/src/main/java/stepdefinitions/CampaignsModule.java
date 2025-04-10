@@ -19,7 +19,6 @@ import io.cucumber.java.en.When;
 
 public class CampaignsModule 
 {
-	private static final CharSequence erev = null;
 	WebDriver driver;
 	@Given("User launches the browser")
 	public void user_launches_the_browser() 
